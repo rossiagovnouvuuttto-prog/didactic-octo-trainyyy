@@ -1,4 +1,5 @@
 name: Upgrade menu 1 2 3
+# kick
 on:
   push:
     paths:
@@ -70,7 +71,6 @@ menuSearch.oninput=()=>{query=menuSearch.value;render()};document.getElementById
           s=s.replace(marker,extra+marker)
           p.write_text(s,encoding='utf-8')
 
-          # Add an obvious online-order button on the main page.
           ip=Path('index.html')
           if ip.exists():
               x=ip.read_text(encoding='utf-8')
